@@ -1,10 +1,6 @@
 import randomColor from 'randomcolor';
 import { useState } from 'react';
 
-// import TestComponent from './TestComponent';
-// import TestCounter from './TestCounter';
-// import TestProp from './TestProp';
-
 export default function App() {
   let iCol = '#ffff00';
   const [randCol, setRandCol] = useState(randomColor());
@@ -23,7 +19,6 @@ export default function App() {
       </button>
       <br />
       <br />
-      {/*Create div element and style it*/}
       <div
         style={{
           backgroundColor: randCol,
