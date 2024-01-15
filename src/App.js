@@ -2,7 +2,6 @@ import randomColor from 'randomcolor';
 import { useState } from 'react';
 
 export default function App() {
-  let iCol = '#ffff00';
   const [randCol, setRandCol] = useState(randomColor());
 
   return (
