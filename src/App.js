@@ -11,13 +11,6 @@ export default function App() {
 
   return (
     <>
-      {/* <h1>Hello Word!</h1>
-      <TestComponent />
-      <br />
-      <TestProp name="Methusalem" age={675} />
-      <br />
-      <h2>Test Counter</h2>
-      <TestCounter /> */}
       <br />
       <button
         onClick={() => {
