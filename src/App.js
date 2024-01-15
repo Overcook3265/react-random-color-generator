@@ -5,7 +5,9 @@ import TestCounter from './TestCounter';
 import TestProp from './TestProp';
 
 export default function App() {
-  const rCol = randomColor();
+  let iCol = '#ffff00';
+  const [randCol, setRandCol] = useState(randomColor());
+
   return (
     <>
       <h1>Hello Word!</h1>
@@ -19,7 +21,7 @@ export default function App() {
       {/*Create div element and style it*/}
       <div
         style={{
-          backgroundColor: rCol,
+          backgroundColor: randCol,
           fontFamily: 'sans-serif',
           padding: 20,
           maxWidth: 100,
@@ -28,6 +30,15 @@ export default function App() {
         This is a test!
       </div>
       <br />
+      <button
+        onClick={() => {
+          setRandCol(randomColor());
+          console.log(randCol);
+          //setEmojiIcon(newEmoji.emoji);
+        }}
+      >
+        Generate
+      </button>
     </>
   );
 }
