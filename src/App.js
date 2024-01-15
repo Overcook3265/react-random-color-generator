@@ -12,7 +12,6 @@ export default function App() {
         onClick={() => {
           setRandCol(randomColor());
           console.log(randCol);
-          //setEmojiIcon(newEmoji.emoji);
         }}
       >
         Generate
