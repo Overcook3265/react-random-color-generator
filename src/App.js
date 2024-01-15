@@ -27,7 +27,7 @@ export default function App() {
           maxWidth: 100,
         }}
       >
-        This is a test!
+        {randCol}
       </div>
       <br />
       <button
