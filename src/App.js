@@ -11,7 +11,6 @@ export default function App() {
       <button
         onClick={() => {
           setRandCol(randomColor());
-          console.log(randCol);
         }}
       >
         Generate
